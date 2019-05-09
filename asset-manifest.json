@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/kanban/static/css/main.00a6cdad.chunk.css",
+    "main.js": "/kanban/static/js/main.1be47c77.chunk.js",
+    "main.js.map": "/kanban/static/js/main.1be47c77.chunk.js.map",
+    "runtime~main.js": "/kanban/static/js/runtime~main.4f25e9d8.js",
+    "runtime~main.js.map": "/kanban/static/js/runtime~main.4f25e9d8.js.map",
+    "static/js/2.da328fc9.chunk.js": "/kanban/static/js/2.da328fc9.chunk.js",
+    "static/js/2.da328fc9.chunk.js.map": "/kanban/static/js/2.da328fc9.chunk.js.map",
+    "index.html": "/kanban/index.html",
+    "precache-manifest.b6f45d1b7846660f8e95aaf4ae7f8afa.js": "/kanban/precache-manifest.b6f45d1b7846660f8e95aaf4ae7f8afa.js",
+    "service-worker.js": "/kanban/service-worker.js",
+    "static/css/main.00a6cdad.chunk.css.map": "/kanban/static/css/main.00a6cdad.chunk.css.map",
+    "static/media/add.svg": "/kanban/static/media/add.6cb6e5fc.svg",
+    "static/media/App.scss": "/kanban/static/media/background.0adf851b.png",
+    "static/media/cross.svg": "/kanban/static/media/cross.5fe0db66.svg"
+  }
+}
