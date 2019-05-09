@@ -1,0 +1,72 @@
+@import  '../../mixins';
+
+.form {
+  &__button {
+    @include addButton();
+
+    width: 272px;
+    height: fit-content;
+    padding: 12px;
+    background-color: #DFE3E6;
+    border-radius: 3px;
+
+    &-text {
+      pointer-events: none; 
+    }
+  }
+
+  &__form {
+    display: none;
+    flex-direction: column;
+    width: 272px;
+    height: fit-content;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: #DFE3E6;
+    border-radius: 3px;
+    
+    &-input {
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 10px 12px 10px 12px;
+      box-sizing: border-box;
+      background-color: #FFF;
+      box-shadow: 0px 1px 4px rgba(9, 45, 66, 0.25);        
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      font-size: 13px;
+      font-family: 'Montserrat', sans-serif;
+      resize: none;
+      
+      &::placeholder {
+        color: #B8B9BB;
+        font-size: 13px;
+        line-height: 19px;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+    
+    &-buttons{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+        
+      &-add{
+        @include addButton();
+    
+        width: fit-content;
+        padding: 6px 7px 5px 7px;
+        background-color: #39C071;
+        color: #FFF;
+        font-weight: bold;
+      }
+    
+      &-close {
+        @include addButton();
+        height: fit-content;
+        padding: 0;
+      }
+    }
+  }
+}

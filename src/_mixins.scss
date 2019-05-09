@@ -1,0 +1,19 @@
+@mixin addButton() {
+    padding: 13px 12px 13px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 13px;
+    line-height: 19px;
+    border-radius: 3px; 
+    color: #6B808C;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-image {
+        margin-right: 10px;
+        pointer-events: none; 
+    }
+}
