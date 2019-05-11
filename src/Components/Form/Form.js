@@ -19,7 +19,7 @@ class Form extends Component {
     }
 
     render() {
-        const { type } = this.props;
+        const { type, action, columnID } = this.props;
         let openButton, placeholder, addButton;
         
         type === 'column' ? openButton = 'Добавить еще одну колонку' : openButton = 'Добавить еще одну карточку'
@@ -32,22 +32,33 @@ class Form extends Component {
                     <img src={addImage} alt='add' className='form__button-image' />
                     <div className='form__button-text'>{openButton}</div>
                 </button>
-                <form className='form__form'>
+                <form className='form__form' action={action} method='POST'>
                     { type === 'column'
-                        ? <input 
-                            className='form__form-input'
-                            placeholder={placeholder}
-                            type='text'
-                        />
-                        : <Textarea 
-                            style={{ minHeight: '54px' }}
-                            className='form__form-input'
-                            placeholder={placeholder}
-                            type='text'
-                        />
+                        ? (
+                            <input 
+                                className='form__form-input'
+                                placeholder={placeholder}
+                                type='text'
+                                name={type}
+                            />
+                        ) : (
+                            <Textarea 
+                                style={{ minHeight: '54px' }}
+                                className='form__form-input'
+                                placeholder={placeholder}
+                                type='text'
+                                name={type}
+                            />
+                        )
                     }
+                    <input 
+                        style={{ display: 'none' }}
+                        type='text'
+                        value={columnID}
+                        name='columnID'
+                    />
                     <div className='form__form-buttons'>
-                        <button className='form__form-buttons-add'>{addButton}</button>
+                        <button className='form__form-buttons-add' type='submit'>{addButton}</button>
                         <button className='form__form-buttons-close' onClick={this.hideInput}>
                             <img src={crossImage} alt='close'/>
                         </button>

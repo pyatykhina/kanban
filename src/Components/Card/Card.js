@@ -3,10 +3,10 @@ import './Card.scss';
 
 class Card extends Component {
     render() {
-        const { text } = this.props;
+        const { title } = this.props;
 
         return (
-            <div className='card'>{text}</div>
+            <div className='card'>{title}</div>
         )
     }
 }
